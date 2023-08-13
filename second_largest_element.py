@@ -1,13 +1,24 @@
-list1 = [12, 7, 5, 9, 11]
+# find 2nd largest element in a list
 
-max1 = 0
-sec_max = 0
-for i in range(len(list1)):
-    if list1[i] > max1:
-        sec_max = max1
-        max1 = list1[i]
+""" 
+    input: 
+        list = [12, 7, 5, 9, 11]
         
-    elif list1[i] < max1 and sec_max < list1[i]:
-        sec_max = list1[i]
+    output: 11
+
+"""
+
+
+listC = [12, 7, 5, 9, 11]
+
+maxx = 0
+sec_max = 0
+for i in range(len(listC)):
+    if listC[i] > maxx:
+        sec_max = maxx
+        maxx = listC[i]
+        
+    elif listC[i] < maxx and sec_max < listC[i]:
+        sec_max = listC[i]
             
 print(sec_max)
